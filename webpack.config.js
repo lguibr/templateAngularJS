@@ -4,13 +4,13 @@ var path = require("path");
 module.exports = {
     entry: "./app/src/index.js",
     output: {
-        path: path.resolve(__dirname, "./dist"),
+        path: path.resolve(__dirname, "dist"),
         filename: "bundle.js"
     },
     plugins: [
         new HtmlWebpackPlugin({
             hash: true,
-            template: "./dist/index.html"
+            template: "./app/src/index.html"
         })
     ],
     module: {
@@ -25,6 +25,14 @@ module.exports = {
                     // Compiles Sass to CSS
                     "sass-loader"
                 ]
+            },
+            {
+                test: /\.css$/i,
+                use: ["style-loader", "css-loader"]
+            },
+            {
+                test: /\.html$/,
+                use: ["html-loader"]
             }
         ]
     }
