@@ -1,8 +1,8 @@
 import angular from "angular";
 import "./index.scss";
 import "angular-material/angular-material.css";
-import appBar from "./appBar/appBar";
-import content from "./content/content";
+import appBar from "./components/appBar/appBar";
+import content from "./components/content/content";
 import angularMaterial from "angular-material";
 import angularAnimate from "angular-animate";
 import angularUIRouter from "angular-ui-router";
