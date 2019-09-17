@@ -2,7 +2,7 @@
     "name": "ngtask",
     "version": "1.0.0",
     "description": "",
-    "main": "index.js",
+    "main": "app.js",
     "scripts": {
         "webpack": "webpack",
         "start": "node node_modules/.bin/webpack-dev-server --content-base app"

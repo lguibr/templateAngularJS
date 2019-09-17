@@ -1,5 +1,6 @@
 import template from "./appBar.html";
 
+
 const appBar = () => {
     return {
         template: template
